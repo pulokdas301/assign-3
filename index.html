@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/18fbc24f9f.js" crossorigin="anonymous"></script>
 
     <!-- tailwand coustom color -->
     <script>
@@ -49,15 +51,22 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
 
 
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey<span>'</span>s</a>
+                    <a class="btn btn-ghost text-3xl font-extrabold">Hockey<p class="text-red-500">’
+                        </p>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li class="text-red-600"><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blogs</a></li>
@@ -68,12 +77,46 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Get Ticket</a>
+                    <i class="fa-solid fa-magnifying-glass text-blue-200"></i>
+                    <a class="btn btn btn-error ml-5 text-white">Get Ticket</a>
                 </div>
             </div>
 
         </nav>
+        <!-- slider side -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="image/Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="image/Images/2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="image/Images/3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="image/Images/4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
         <div>
+
+
 
         </div>
         <div>
@@ -82,8 +125,12 @@
 
     </header>
     <main>
-        <section>
-            <div class="grid grid-cols-4 gap-4">
+        <section class="text-center my-24">
+            <h2 class="text-5xl font-extrabold mb-5">Professional Hockeys Club</h2>
+            <p class="lg:max-w-3xl mx-auto"> The radial-progressbar Explain here. </p>
+
+
+            <div class=" grid grid-cols-1 p-10 lg:grid-cols-4 gap-15  ">
                 <div class="w-60 text-center">
                     <div class="radial-progress bg-white text-primary-content text-red-600 border-primary rotate-180  "
                         style="--value:87;" role="progressbar">
@@ -126,16 +173,232 @@
                 </div>
             </div>
 
-            <section>
+            <section class="pl-15 mb-10">
+
+                <h2 class="text-5xl font-extrabold mb-5">Program Sections</h2>
+                <p class="lg:max-w-3xl mx-auto"> Program section start here. see more contant </p>
+
+                <div class="grid grid-cols-1 gap-3 p-3 my-10 lg:grid-cols-2  ">
+                    <div class="card w-98 bg-base-100 shadow-xl image-full">
+                        <figure><img src="image/Images/2.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Junior Program</h2>
+                            <p class="text-start">First card Hockey's website....</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary border-0 bg-red-500">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-98 bg-base-100 shadow-xl image-full">
+                        <figure><img src="image/Images/3.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Teenager Program</h2>
+                            <p class="text-start">Second card Hockey's website....</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary border-0 bg-red-500">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card w-190 bg-base-100 shadow-xl image-full p-3 -my-10">
+                    <figure><img src="image/Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Professional Program</h2>
+                        <p class="text-start">Third card Hockey's website....</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary border-0 bg-red-500">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
 
 
 
 
             </section>
-            <section>
+            <section class="my-16">
 
-            </section>
-            <section>
+
+                <div class="card max-w-lg bg-base-100 shadow-xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="image/Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-2 ">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-300 pr-2"></i>5.0
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye pr-2"></i>20
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart pr-2"></i> 200
+                                </div>
+
+                            </div>
+                            <h1 class=" text-xl font-extrabold pt-3 text-start">World Cup Flags Football</h1>
+                            <p class="text-start pt-2">card! create new style..see more design
+                            </p>
+                            <div class="flex gap-5">
+                                <div class="text-red-600 font-extrabold">
+                                    Price:$22.00
+                                </div>
+                                <div>
+                                    <p class="-text-xl">Delivery Fee:Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card max-w-lg bg-base-100 shadow-xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="image/Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-2 ">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-300 pr-2"></i>5.0
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye pr-2"></i>20
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart pr-2"></i> 200
+                                </div>
+
+                            </div>
+                            <h1 class=" text-xl font-extrabold pt-3 text-start">World Cup Flags Football</h1>
+                            <p class="text-start pt-2">card! create new style..see more design
+                            </p>
+                            <div class="flex gap-5">
+                                <div class="text-red-600 font-extrabold">
+                                    Price:$22.00
+                                </div>
+                                <div>
+                                    <p class="-text-xl">Delivery Fee:Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card max-w-lg bg-base-100 shadow-xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="image/Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-2 ">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-300 pr-2"></i>5.0
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye pr-2"></i>20
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart pr-2"></i> 200
+                                </div>
+
+                            </div>
+                            <h1 class=" text-xl font-extrabold pt-3 text-start">World Cup Flags Football</h1>
+                            <p class="text-start pt-2">card! create new style..see more design
+                            </p>
+                            <div class="flex gap-5">
+                                <div class="text-red-600 font-extrabold">
+                                    Price:$22.00
+                                </div>
+                                <div>
+                                    <p class="-text-xl">Delivery Fee:Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card max-w-lg bg-base-100 shadow-xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="image/Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-2 ">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-300 pr-2"></i>5.0
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye pr-2"></i>20
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart pr-2"></i> 200
+                                </div>
+
+                            </div>
+                            <h1 class=" text-xl font-extrabold pt-3 text-start">World Cup Flags Football</h1>
+                            <p class="text-start pt-2">card! create new style..see more design
+                            </p>
+                            <div class="flex gap-5">
+                                <div class="text-red-600 font-extrabold">
+                                    Price:$22.00
+                                </div>
+                                <div>
+                                    <p class="-text-xl">Delivery Fee:Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card max-w-lg bg-base-100 shadow-xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="image/Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-2 ">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-300 pr-2"></i>5.0
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye pr-2"></i>20
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart pr-2"></i> 200
+                                </div>
+
+                            </div>
+                            <h1 class=" text-xl font-extrabold pt-3 text-start">World Cup Flags Football</h1>
+                            <p class="text-start pt-2">card! create new style..see more design
+                            </p>
+                            <div class="flex gap-5">
+                                <div class="text-red-600 font-extrabold">
+                                    Price:$22.00
+                                </div>
+                                <div>
+                                    <p class="-text-xl">Delivery Fee:Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card max-w-lg bg-base-100 shadow-xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="image/Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="flex gap-2 ">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-300 pr-2"></i>5.0
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-eye pr-2"></i>20
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart pr-2"></i> 200
+                                </div>
+
+                            </div>
+                            <h1 class=" text-xl font-extrabold pt-3 text-start">World Cup Flags Football</h1>
+                            <p class="text-start pt-2">card! create new style..see more design
+                            </p>
+                            <div class="flex gap-5">
+                                <div class="text-red-600 font-extrabold">
+                                    Price:$22.00
+                                </div>
+                                <div>
+                                    <p class="-text-xl">Delivery Fee:Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </section>
             <section>
